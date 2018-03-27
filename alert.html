@@ -1,8 +1,14 @@
 <html>
   <body>
     <p>This is some text.</p>
-    <script>setTimeout(function(){ alert("Hello"); }, 500);</script>
-    <script src="https://blackhole.webpagetest.org/"></script>
+    <script>
+      setTimeout(function()
+        { 
+          alert("Hello");
+          document.getElementById('update').innerHTML = 'This is an update';
+        }, 500);
+
+    </script>
     <p id='update'></p>
   </body>
 </html>
